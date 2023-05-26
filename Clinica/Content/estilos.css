@@ -1,5 +1,5 @@
 
-body1{
+body1 {
     margin: 10;
     height: 100vh;
     display: flex;
@@ -8,7 +8,6 @@ body1{
     background-color: #fff;
     background-image: url("https://img.freepik.com/fotos-premium/resumen-fondo-azul-gradiente-fondo-azul-pagina-web-o-presentacion_79161-487.jpg?w=900");
     background-size: 100%;
-
 }
 ul{
 

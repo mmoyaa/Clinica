@@ -13,18 +13,42 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
      <%-- esto conecta al bootstrap--%>
 </head>
+
 <body>
+  
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             
+       
+
             </asp:ContentPlaceHolder>
+
+             <div class="row">
+            <div class="col-2">
+             <ul>
+                    <li href="~/Login1"><b>LOGIN</b></li>
+                    <li href="~/Servicios"><b>SERVICIOS</b></li>
+                    <li><b>EQUIPO</b></li>
+                    <li><b>CONTACTO</b></li>
+                    
+                </ul>
+             </div>
+            <div class="col-6">
+           
+            </div>
+
+
+
+
+            </div>
                  <footer>
                      <hr />
                 <p>&copy; <%: DateTime.Now.Year %> - Michael Moya </p>
             </footer>
         </div>
     </form>
+       
       <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
     </asp:PlaceHolder>

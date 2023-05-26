@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Pagina Login</h1>
+  
    
 
    <%-- <p> <b>Ingresa Nombre </b></p>
@@ -14,26 +14,14 @@
 
    <button class="btn btn-success">Enviar</button>--%>
 
-    <head>
-    <link rel="stylesheet" type="text/css" href="Content/estilos.css".css">
-</head>
+    
+    <link rel="stylesheet" type="text/css" href="Content/estilos.css".css"> 
+        
+
+
  
- 
 
-
-    <body>
-
-             <ul>
-                    <li><b>INICIO</b></li>
-                    <li><b>SERVICIOS</b></li>
-                    <li><b>EQUIPO</b></li>
-                    <li><b>CONTACTO</b></li>
-                    
-                </ul>
-            </div>
-
-
-
+    <h1>logiiiiin</h1>
 
 
 
