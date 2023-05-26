@@ -73,3 +73,7 @@ C:\Users\MasBien\Documents\ProyectoPA\Clinica\Clinica\obj\Debug\Clinica.csproj.C
 C:\Users\MasBien\Documents\ProyectoPA\Clinica\Clinica\obj\Debug\Clinica.csproj.CopyComplete
 C:\Users\MasBien\Documents\ProyectoPA\Clinica\Clinica\obj\Debug\Clinica.dll
 C:\Users\MasBien\Documents\ProyectoPA\Clinica\Clinica\obj\Debug\Clinica.pdb
+C:\Users\MasBien\Documents\ProyectoPA\Clinica\Clinica\bin\EntityFramework.dll
+C:\Users\MasBien\Documents\ProyectoPA\Clinica\Clinica\bin\EntityFramework.SqlServer.dll
+C:\Users\MasBien\Documents\ProyectoPA\Clinica\Clinica\bin\EntityFramework.xml
+C:\Users\MasBien\Documents\ProyectoPA\Clinica\Clinica\bin\EntityFramework.SqlServer.xml

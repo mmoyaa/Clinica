@@ -3,4 +3,18 @@
 
 
     <h1>Citas</h1>
+
+
+      <div class="col-2 ">
+
+                <ul>
+                    <li><b>INICIO</b></li>
+                    <li><b>SERVICIOS</b></li>
+                    <li><b>EQUIPO</b></li>
+                    <li><b>CONTACTO</b></li>
+                    
+                </ul>
+            </div>
+
+
 </asp:Content>
