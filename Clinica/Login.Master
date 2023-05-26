@@ -10,7 +10,8 @@
     </asp:ContentPlaceHolder>
 
    <%-- esto conecta al bootstrap--%>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+<%--    <webopt:bundlereference runat="server" path="~/Content/css" />--%>
+    <link rel="stylesheet" type="text/css" href="Content/estilos.css".css"> 
      <%-- esto conecta al bootstrap--%>
 </head>
 
@@ -23,18 +24,21 @@
        
 
             </asp:ContentPlaceHolder>
+            
+            <nav class="navbar navbar-dark bg-dark">
+                   <div class="row">
+                       <div class="col-2">
+               
+                  <li class="nav-item"><a class="nav-link" runat="server" href="~/Login1">Login</a></li>
+                  <li class="nav-item"><a class="nav-link" runat="server" href="~/Servicios">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" runat="server" href="~/Equipo">Equipo</a></li>
+                  <li class="nav-item"><a class="nav-link" runat="server" href="~/Contactologin">Contacto</a></li>
 
-             <div class="row">
-            <div class="col-2">
-             <ul>
-                    <li href="~/Login1"><b>LOGIN</b></li>
-                    <li href="~/Servicios"><b>SERVICIOS</b></li>
-                    <li><b>EQUIPO</b></li>
-                    <li><b>CONTACTO</b></li>
-                    
-                </ul>
-             </div>
-            <div class="col-6">
+                      </div>
+            </div>
+          </nav>
+
+           
            
             </div>
 

@@ -15,17 +15,22 @@
    <button class="btn btn-success">Enviar</button>--%>
 
     
-    <link rel="stylesheet" type="text/css" href="Content/estilos.css".css"> 
+<%--    <link rel="stylesheet" type="text/css" href="Content/estilos.css".css"> --%>
         
 
 
  
 
-    <h1>logiiiiin</h1>
+    <h1>logiiiiingg</h1>
+ 
+
+    
+    <button class="nav-item btn btn-success"><a class="nav-link" runat="server" href="~/Default">A inicio</a></button>
+
+    
 
 
-
-
+    <button class="nav-item btn btn-danger"><a class="nav-link" runat="server" href="~/pgnError">Si es error</a></button>
 
 <%--
     <div id="login">
