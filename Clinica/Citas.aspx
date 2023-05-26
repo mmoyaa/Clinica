@@ -2,7 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
-    <h1>Citas</h1>
 
 
       <div class="col-2 ">

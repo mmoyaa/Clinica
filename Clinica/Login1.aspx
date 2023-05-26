@@ -14,11 +14,32 @@
 
    <button class="btn btn-success">Enviar</button>--%>
 
-
-
+    <head>
+    <link rel="stylesheet" type="text/css" href="Content/estilos.css".css">
+</head>
+ 
+ 
 
 
     <body>
+
+             <ul>
+                    <li><b>INICIO</b></li>
+                    <li><b>SERVICIOS</b></li>
+                    <li><b>EQUIPO</b></li>
+                    <li><b>CONTACTO</b></li>
+                    
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+<%--
     <div id="login">
         <h3 class="text-center text-white pt-5">Login form</h3>
         <div class="container">
@@ -48,7 +69,7 @@
             </div>
         </div>
     </div>
-</body>
+</body>--%>
 
 
 </asp:Content>
