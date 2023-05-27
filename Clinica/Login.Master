@@ -1,56 +1,105 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.Master.cs" Inherits="Clinica.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.Master.cs" Inherits="Clinica.Site1" %> 
 
-<!DOCTYPE html>
-
-<html>
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-
-   <%-- esto conecta al bootstrap--%>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-     <%-- esto conecta al bootstrap--%>
-</head>
-
-<body>
   
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            
-       
 
-            </asp:ContentPlaceHolder>
+<!DOCTYPE html> 
 
-             <div class="row">
-            <div class="col-2">
-             <ul>
-                    <li href="~/Login1"><b>LOGIN</b></li>
-                    <li href="~/Servicios"><b>SERVICIOS</b></li>
-                    <li><b>EQUIPO</b></li>
-                    <li><b>CONTACTO</b></li>
-                    
-                </ul>
-             </div>
-            <div class="col-6">
+  
+
+<html> 
+
+<head runat="server"> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+
+    <title></title> 
+
+    <asp:ContentPlaceHolder ID="head" runat="server"> 
+
+    </asp:ContentPlaceHolder> 
+
+  
+
+   <%-- esto conecta al bootstrap--%> 
+
+<%--<webopt:bundlereference runat="server" path="~/Content/css" /> --%>
+
+    <link rel="stylesheet" type="text/css" href="Content/estilos.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    <%-- esto conecta al bootstrap--%> 
+
+</head> 
+
+  
+
+<body   background="imagenes/LW005.jpg"> 
+
+   
+
+
+
+         
+
            
-            </div>
+                <div class="row">
+                    <div class="col-3">
+                          
+                 <nav class="navbar navbar-dark bg-primary">
+                  <li class="nav-item"><a class="nav-link" runat="server" href="~/Login1">Login</a></li> 
+
+                  <li class="nav-item"><a class="nav-link" runat="server" href="~/Servicios">Servicios</a></li> 
+
+                  <li class="nav-item"><a class="nav-link" runat="server" href="~/Equipo">Equipo</a></li> 
+
+                  <li class="nav-item"><a class="nav-link" runat="server" href="~/Contactologin">Contacto</a></li>                
+                           </nav>    
 
 
+                        </div> 
+                    <div class="col-3 ellogin">
 
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+   
+                </asp:ContentPlaceHolder> 
+                          <form id="form1" runat="server"> 
 
-            </div>
-                 <footer>
-                     <hr />
-                <p>&copy; <%: DateTime.Now.Year %> - Michael Moya </p>
-            </footer>
-        </div>
-    </form>
-       
-      <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
-    </asp:PlaceHolder>
-</body>
-</html>
+                           </form> 
+                        </div>           
+                    </div>
+               
+            
+            
+                       
+         
+     
+
+                 <footer> 
+
+                     <hr /> 
+
+                <p>&copy; <%: DateTime.Now.Year %> - Michael Moya </p> 
+
+            </footer> 
+
+        
+
+  
+
+        
+
+      <asp:PlaceHolder runat="server"> 
+
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %> 
+
+    </asp:PlaceHolder> 
+
+</body> 
+
+</html> 
+
+ 

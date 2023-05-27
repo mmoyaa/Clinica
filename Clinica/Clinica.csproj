@@ -112,6 +112,7 @@
     <Content Include="About.aspx" />
     <Content Include="Biblioteca.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="ContactoLogin.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -131,9 +132,11 @@
     <Content Include="Content\estilos.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Equipo.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="imagenes\fondoLogin.jpg" />
+    <Content Include="imagenes\LW005.jpg" />
     <Content Include="Login1.aspx" />
     <Content Include="Pacientes.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -225,12 +228,26 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContactoLogin.aspx.cs">
+      <DependentUpon>ContactoLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactoLogin.aspx.designer.cs">
+      <DependentUpon>ContactoLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipo.aspx.cs">
+      <DependentUpon>Equipo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipo.aspx.designer.cs">
+      <DependentUpon>Equipo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
