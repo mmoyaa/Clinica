@@ -11,50 +11,15 @@
    
 
    
-
-  
-
-   <%-- <p> <b>Ingresa Nombre </b></p> 
-
-    <input type="text" name="idUsuario" value=""  class="form-control"/> 
-
-    <br /> 
-
-     <p> <b>Ingresa Password </b></p> 
-
-     <input type="text" name="passUsuario" value=""  class="form-control"/> 
-
-    <br /> 
-
-  
-
-   <button class="btn btn-success">Enviar</button>--%> 
-
-  
-
-     
-
-
-
-         
-
-  
-
-  
-
-  
-
-  
-
-
-
+        
    <div class="container">
     <h2>Iniciar sesión</h2>
     <form>
       <input type="text" name="username" placeholder="Usuario" required>
       <input type="password" name="password" placeholder="Contraseña" required>
+        
       <input type="submit" value="Iniciar sesión"class="btn btn-primary">
-
+        <br />
 
     </form>
     
