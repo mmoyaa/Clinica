@@ -6,5 +6,5 @@
 
 
 
-    <h1>Pagina de Error</h1>
+    <h1 class="ellogin">Pagina de Error</h1>
 </asp:Content>
