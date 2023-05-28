@@ -57,6 +57,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -131,6 +133,16 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\estilos.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Datos\ModelSistemaVentas.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelSistemaVentas.edmx</DependentUpon>
+      <LastGenOutput>ModelSistemaVentas.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Datos\ModelSistemaVentas.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelSistemaVentas.edmx</DependentUpon>
+      <LastGenOutput>ModelSistemaVentas.cs</LastGenOutput>
+    </Content>
     <Content Include="Default.aspx" />
     <Content Include="Equipo.aspx" />
     <Content Include="favicon.ico" />
@@ -169,6 +181,13 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="pgnError.aspx" />
     <Content Include="Citas.aspx" />
+    <EntityDeploy Include="Datos\ModelSistemaVentas.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelSistemaVentas.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Datos\ModelSistemaVentas.edmx.diagram">
+      <DependentUpon>ModelSistemaVentas.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -235,6 +254,21 @@
     <Compile Include="ContactoLogin.aspx.designer.cs">
       <DependentUpon>ContactoLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Datos\ModelSistemaVentas.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSistemaVentas.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ModelSistemaVentas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSistemaVentas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ModelSistemaVentas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSistemaVentas.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -252,6 +286,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="logica\UsuarioController.cs" />
     <Compile Include="Login1.aspx.cs">
       <DependentUpon>Login1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -330,6 +365,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
