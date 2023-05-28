@@ -60,6 +60,24 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -133,16 +151,6 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\estilos.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Datos\ModelSistemaVentas.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelSistemaVentas.edmx</DependentUpon>
-      <LastGenOutput>ModelSistemaVentas.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Datos\ModelSistemaVentas.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelSistemaVentas.edmx</DependentUpon>
-      <LastGenOutput>ModelSistemaVentas.cs</LastGenOutput>
-    </Content>
     <Content Include="Default.aspx" />
     <Content Include="Equipo.aspx" />
     <Content Include="favicon.ico" />
@@ -150,6 +158,16 @@
     <Content Include="imagenes\fondoLogin.jpg" />
     <Content Include="imagenes\LW005.jpg" />
     <Content Include="Login1.aspx" />
+    <Content Include="Modelo\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Modelo\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
     <Content Include="Pacientes.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -181,12 +199,13 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="pgnError.aspx" />
     <Content Include="Citas.aspx" />
-    <EntityDeploy Include="Datos\ModelSistemaVentas.edmx">
+    <Content Include="Areas\mvcControlador\Views\web.config" />
+    <EntityDeploy Include="Modelo\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelSistemaVentas.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Datos\ModelSistemaVentas.edmx.diagram">
-      <DependentUpon>ModelSistemaVentas.edmx</DependentUpon>
+    <Content Include="Modelo\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -233,6 +252,7 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\mvcControlador\mvcControladorAreaRegistration.cs" />
     <Compile Include="Biblioteca.aspx.cs">
       <DependentUpon>Biblioteca.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -254,21 +274,7 @@
     <Compile Include="ContactoLogin.aspx.designer.cs">
       <DependentUpon>ContactoLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Datos\ModelSistemaVentas.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelSistemaVentas.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Datos\ModelSistemaVentas.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelSistemaVentas.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Datos\ModelSistemaVentas.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelSistemaVentas.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="Controlador\UsuarioControler.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -286,13 +292,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="logica\UsuarioController.cs" />
     <Compile Include="Login1.aspx.cs">
       <DependentUpon>Login1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login1.aspx.designer.cs">
       <DependentUpon>Login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Pacientes.aspx.cs">
       <DependentUpon>Pacientes.aspx</DependentUpon>
@@ -354,6 +374,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\mvcControlador\Controllers\" />
+    <Folder Include="Areas\mvcControlador\Data\" />
+    <Folder Include="Areas\mvcControlador\Views\Shared\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
